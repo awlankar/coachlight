@@ -1,0 +1,17 @@
+name: coachlight_example
+description: Example for the coachlight package.
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: '>=3.41.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  coachlight:
+    path: ../
+
+flutter:
+  uses-material-design: true

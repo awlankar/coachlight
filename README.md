@@ -55,7 +55,7 @@ Until it is on pub.dev, use it from Git:
 dependencies:
   coachlight:
     git:
-      url: https://github.com/<you>/coachlight.git
+      url: https://github.com/awlankar/coachlight.git
       ref: v0.1.0
 ```
 

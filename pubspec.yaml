@@ -3,8 +3,8 @@ description: >-
   Spotlight coach marks for Flutter. Dims the screen, highlights one widget at
   a time and explains it in a small card. No dependencies beyond Flutter.
 version: 0.1.0
-# repository: https://github.com/<you>/coachlight   # add before publishing
-publish_to: 'none' # remove when ready to publish on pub.dev
+repository: https://github.com/awlankar/coachlight
+issue_tracker: https://github.com/awlankar/coachlight/issues
 
 environment:
   sdk: '>=3.12.0 <4.0.0'

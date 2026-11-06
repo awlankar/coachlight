@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Updated README installation instructions for pub.dev.
+
 ## 0.1.0
 
 - First version: spotlight steps, Next / Skip / Done, progress text,

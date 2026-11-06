@@ -47,16 +47,19 @@ Translate the buttons with `CoachLabels` and change the look with
 A tap on the highlighted widget moves to the next step.
 
 
-## Getting it
+## Installation
 
-Until it is on pub.dev, use it from Git:
+Add CoachLight to your Flutter project:
+
+```bash
+flutter pub add coachlight
+```
+
+Or add it directly to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  coachlight:
-    git:
-      url: https://github.com/awlankar/coachlight.git
-      ref: v0.1.0
+  coachlight: ^0.1.1
 ```
 
 ## Try the example

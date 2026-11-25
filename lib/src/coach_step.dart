@@ -1,3 +1,9 @@
+// coachlight - spotlight coach marks for Flutter.
+// Author: Nitin Awlankar
+// Licensed under the MIT License; see the LICENSE file.
+//
+// Describes one step of a tour: which widget to highlight and what to say.
+
 import 'package:flutter/widgets.dart';
 
 /// Shape of the cut-out around a highlighted widget.

@@ -2,13 +2,19 @@ name: coachlight
 description: >-
   Spotlight coach marks for Flutter. Dims the screen, highlights one widget at
   a time and explains it in a small card. No dependencies beyond Flutter.
-version: 0.1.1
+version: 0.2.0
 repository: https://github.com/awlankar/coachlight
 issue_tracker: https://github.com/awlankar/coachlight/issues
+topics:
+  - onboarding
+  - tutorial
+  - coach-marks
+  - spotlight
+  - ui
 
 environment:
-  sdk: '>=3.12.0 <4.0.0'
-  flutter: '>=3.41.0'
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
 
 dependencies:
   flutter:
@@ -17,4 +23,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: '>=3.0.0 <7.0.0'

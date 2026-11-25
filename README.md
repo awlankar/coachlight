@@ -4,7 +4,8 @@ Spotlight coach marks for Flutter. The screen is dimmed, one widget at a time
 is cut out and a small card explains it, with **Next**, **Skip** and a
 "1 of 3" counter.
 
-- No dependencies beyond the Flutter SDK
+- No dependencies beyond the Flutter SDK, and no Material or Cupertino import:
+  works on Flutter 3.10+ / Dart 3.0+ and on the newest releases
 - Steps whose widget is not on screen are skipped automatically
 - Scrolls the target into view; re-measures on rotation and resize
 - Places the card above or below the target and keeps it on screen
@@ -34,7 +35,9 @@ await CoachTour.showOnce(context,
 ```
 
 Translate the buttons with `CoachLabels` and change the look with
-`CoachStyle`.
+`CoachStyle`. The card does not read your app's `ThemeData`; it uses light or
+dark defaults from the platform brightness. Set `cardColor`, `accentColor`,
+`titleStyle` and `bodyStyle` to match your app.
 
 ## How it ends
 
@@ -59,13 +62,20 @@ Or add it directly to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  coachlight: ^0.1.1
+  coachlight: ^0.2.0
 ```
 
 ## Try the example
 
+The example demonstrates every feature: rectangle and circle cut-outs, scrolling
+to an off-screen target, skipped steps, translated labels, three styles,
+right-to-left, light and dark themes, `showOnce` and the result callbacks.
+
+The example app needs Flutter 3.47 or newer (it uses `material_ui`); the
+package itself works on older versions.
+
 ```
 cd example
-flutter create .   # one-time: adds the platform folders
+flutter create --platforms=android,ios,windows .   # one-time, pick your platforms
 flutter run
 ```

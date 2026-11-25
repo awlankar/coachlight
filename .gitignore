@@ -5,3 +5,6 @@ pubspec.lock
 .idea/
 *.iml
 .flutter-plugins*
+.kotlin/
+**/android/.gradle/
+**/android/local.properties

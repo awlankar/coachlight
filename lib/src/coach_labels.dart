@@ -1,3 +1,9 @@
+// coachlight - spotlight coach marks for Flutter.
+// Author: Nitin Awlankar
+// Licensed under the MIT License; see the LICENSE file.
+//
+// Texts shown by the tour, kept separate so apps can translate them.
+
 import 'package:flutter/foundation.dart';
 
 /// Texts used by the tour, so apps can translate them.

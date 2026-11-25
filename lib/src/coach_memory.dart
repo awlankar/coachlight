@@ -1,3 +1,9 @@
+// coachlight - spotlight coach marks for Flutter.
+// Author: Nitin Awlankar
+// Licensed under the MIT License; see the LICENSE file.
+//
+// Interface for remembering seen tours, plus a simple in-memory version.
+
 /// Remembers which tours were already seen. Back it with your own storage
 /// (database, preferences, a file); the package stores nothing itself.
 abstract interface class CoachMemory {
@@ -11,6 +17,7 @@ abstract interface class CoachMemory {
 /// Keeps seen tours in memory only; everything is forgotten on restart.
 /// Useful in tests and demos.
 class InMemoryCoachMemory implements CoachMemory {
+  // Ids of the tours already shown in this run.
   final Set<String> _seen = <String>{};
 
   @override
